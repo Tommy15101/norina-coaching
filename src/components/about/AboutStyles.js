@@ -57,7 +57,7 @@ export const LeftSide = styled.div`
   grid-row-start: 2;
   grid-column-start: 1;
   grid-row-end: 3;
-  grid-column-end: 5;
+  grid-column-end: 2;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -101,7 +101,7 @@ export const RightSide = styled.div`
   height: 90%;
   width: 90%;
   grid-row-start: 2;
-  grid-column-start: 3;
+  grid-column-start: 2;
   grid-row-end: 5;
   grid-column-end: 5;
   padding-top: 15px;

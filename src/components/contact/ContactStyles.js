@@ -19,6 +19,7 @@ export const ContactDisplay = styled.div`
 
   @media (max-width: 768px) {
     width: 90%;
+  }
 `;
 export const ContactTitle = styled.div`
   grid-row-start: 1;
@@ -42,6 +43,7 @@ export const ContactTitle = styled.div`
     }
   }
 `;
+
 export const FormContainer = styled.div`
   grid-row-start: 2;
   grid-column-start: 1;
@@ -60,27 +62,41 @@ export const Form = styled.form`
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
+
+  button {
+    padding: 5px 40px;
+  }
 `;
 export const FormGroup = styled.div`
   width: 100%;
   display: flex;
   label {
-    width: 20%;
+    width: 10%;
     font-family: var(--page-title);
     display: flex;
+    justify-content: start;
     align-items: start;
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
   input {
-    width: 80%;
+    width: 50%;
     border-radius: 10px;
     border: 1px solid var(--main-color-navy);
     padding: 10px;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
   }
   textarea {
-    width: 80%;
+    width: 90%;
     border-radius: 10px;
     border: 1px solid var(--main-color-navy);
     padding: 10px;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
   }
 `;
 

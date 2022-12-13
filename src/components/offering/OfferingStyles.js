@@ -34,9 +34,11 @@ export const OfferingTitle = styled.div`
     grid-column-start: 1;
     grid-row-end: 2;
     grid-column-end: 6;
+    border: none;
 
     h2 {
       text-align: center;
+      margin: 0;
     }
   }
 `;
@@ -48,7 +50,6 @@ export const OfferingDisplayWrapper = styled.div`
   justify-content: center;
 
   @media (max-width: 768px) {
-    display: grid;
     grid-row-start: 2;
     grid-column-start: 1;
     grid-row-end: 6;
@@ -69,7 +70,7 @@ export const OfferingDisplayContainer = styled.div`
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr;
     height: 170vh;
-    margin: 180px 0 30px 0;
+    margin: 0 0 50px 0;
     width: 80vw;
   }
 `;
