@@ -74,7 +74,7 @@ export const LeftSide = styled.div`
     grid-column-end: 2;
     border: none;
     margin: 0;
-    padding: 0;
+    padding: 20px 0;
     width: 100%;
     height: 100%;
   }
@@ -137,4 +137,5 @@ export const Text = styled.p`
   color: var(--main-color-navy);
   line-height: 24px;
   padding: 20px;
+  text-align: center;
 `;
