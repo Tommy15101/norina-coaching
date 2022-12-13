@@ -9,7 +9,7 @@ export const AboutContainer = styled.main`
   grid-template-columns: 1fr 1fr 1fr 1fr;
   /* MOBILE */
   @media (max-width: 768px) {
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     height: auto;
   }
@@ -31,6 +31,24 @@ export const GreetingContainer = styled.div`
     grid-column-end: 5;
   }
 `;
+export const Greeting = styled.h3`
+  font-weight: none;
+  font-size: 40px;
+  font-family: var(--page-title);
+  letter-spacing: 10px;
+  color: var(--main-color-navy);
+  margin: 0;
+  line-height: 50px;
+`;
+export const Intro = styled.p`
+  font-size: 17px;
+  margin: 35px 30px 0 30px;
+  text-align: center;
+  font-weight: 530;
+  font-family: Apple Chancery;
+  line-height: 30px;
+  letter-spacing: 3px;
+`;
 
 export const LeftSide = styled.div`
   height: auto;
@@ -38,8 +56,8 @@ export const LeftSide = styled.div`
   margin: 80px 80px 80px 80px;
   grid-row-start: 2;
   grid-column-start: 1;
-  grid-row-end: 5;
-  grid-column-end: 3;
+  grid-row-end: 3;
+  grid-column-end: 5;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -48,14 +66,13 @@ export const LeftSide = styled.div`
   @media (max-width: 768px) {
     grid-row-start: 2;
     grid-column-start: 1;
-    grid-row-end: 4;
+    grid-row-end: 3;
     grid-column-end: 5;
-
-    margin: 0;
+    margin: 30px 0 0 0;
+    border: none;
     padding: 0;
     width: 100%;
-    height: auto;
-    border: none;
+    height: 100%;
   }
 `;
 
@@ -67,9 +84,8 @@ export const AboutImg = styled.img`
   border-top-right-radius: 200px;
   object-fit: contain;
   @media (max-width: 768px) {
-    border-radius: 50%;
+    border-radius: 70%;
     height: 400px;
-    position: relative;
   }
 `;
 
@@ -92,42 +108,28 @@ export const RightSide = styled.div`
   display: flex;
   align-items: center;
   @media (max-width: 768px) {
-    grid-row-start: 4;
+    grid-row-start: 3;
     grid-column-start: 1;
-    grid-row-end: 7;
+    grid-row-end: 5;
     grid-column-end: 5;
-
     width: 100%;
     padding: 0;
   }
 `;
 
-export const Greeting = styled.h3`
-  font-weight: none;
-  font-size: 40px;
-  font-family: var(--page-title);
-  letter-spacing: 10px;
-  color: var(--main-color-navy);
-  margin: 0;
-`;
-export const Intro = styled.p`
-  font-size: 17px;
-  margin: 0 30px;
-  text-align: center;
-  font-weight: 530;
-  font-family: Apple Chancery;
-`;
 export const RightSideBottom = styled.div`
-  height: 70%;
+  height: 100%;
   display: flex;
   align-items: center;
   margin: 0 20px 0 20px;
   line-height: 23px;
   @media (max-width: 768px) {
-    margin: 20px 30px 20px 30px;
+    margin: 20px 30px 0 30px;
+    align-items: end;
   }
 `;
 export const Text = styled.p`
-  font-size: 15px;
+  font-size: 16px;
   color: var(--main-color-navy);
+  line-height: 24px;
 `;

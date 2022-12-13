@@ -43,8 +43,8 @@ export const MissionTitle = styled.div`
     padding: 0 20px;
 
     h3 {
-      font-size: 18px;
-      letter-spacing: 4px;
+      font-size: 20px;
+      letter-spacing: 5px;
     }
   }
 `;
@@ -84,6 +84,11 @@ export const MissionText = styled.div`
       font-weight: bolder;
       font-family: var(--hero-title);
       font-size: 20px;
+    }
+
+    p {
+      line-height: 22px;
+      text-align: center;
     }
   }
 `;
