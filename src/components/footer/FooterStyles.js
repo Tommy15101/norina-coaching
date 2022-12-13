@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const FooterContainer = styled.footer`
   width: 100vw;
-  height: 30vh;
-  background-color: darkgrey;
+  height: 15vh;
+  background-color: var(--main-color-beige);
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr;

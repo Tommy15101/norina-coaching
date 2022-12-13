@@ -10,7 +10,7 @@ export const OfferingContainer = styled.main`
 
   @media (max-width: 768px) {
     height: auto;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr auto;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 `;
@@ -23,9 +23,8 @@ export const OfferingTitle = styled.div`
   justify-content: center;
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
   h2 {
-    text-transform: uppercase;
     letter-spacing: 15px;
-    font-family: VacationsInParadise;
+    font-family: var(--page-title);
     font-size: 30px;
   }
 
@@ -39,6 +38,7 @@ export const OfferingTitle = styled.div`
     h2 {
       text-align: center;
       margin: 0;
+      padding: 70px 0;
     }
   }
 `;

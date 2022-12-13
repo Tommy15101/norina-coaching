@@ -9,8 +9,8 @@ export const AboutContainer = styled.main`
   grid-template-columns: 1fr 1fr 1fr 1fr;
   /* MOBILE */
   @media (max-width: 768px) {
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr auto;
+    grid-template-columns: 1fr;
     height: auto;
   }
 `;
@@ -28,7 +28,11 @@ export const GreetingContainer = styled.div`
     grid-row-start: 1;
     grid-column-start: 1;
     grid-row-end: 2;
-    grid-column-end: 5;
+    grid-column-end: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 `;
 export const Greeting = styled.h3`
@@ -67,9 +71,9 @@ export const LeftSide = styled.div`
     grid-row-start: 2;
     grid-column-start: 1;
     grid-row-end: 3;
-    grid-column-end: 5;
-    margin: 30px 0 0 0;
+    grid-column-end: 2;
     border: none;
+    margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
@@ -85,7 +89,7 @@ export const AboutImg = styled.img`
   object-fit: contain;
   @media (max-width: 768px) {
     border-radius: 70%;
-    height: 400px;
+    height: 350px;
   }
 `;
 
@@ -110,8 +114,9 @@ export const RightSide = styled.div`
   @media (max-width: 768px) {
     grid-row-start: 3;
     grid-column-start: 1;
-    grid-row-end: 5;
-    grid-column-end: 5;
+    grid-row-end: 4;
+    grid-column-end: 2;
+
     width: 100%;
     padding: 0;
   }
@@ -125,11 +130,11 @@ export const RightSideBottom = styled.div`
   line-height: 23px;
   @media (max-width: 768px) {
     margin: 20px 30px 0 30px;
-    align-items: end;
   }
 `;
 export const Text = styled.p`
   font-size: 16px;
   color: var(--main-color-navy);
   line-height: 24px;
+  padding: 20px;
 `;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ContactContainer = styled.main`
-  height: 70vh;
+  height: 85vh;
   width: 100vw;
   background-color: var(--main-color-navy);
   display: flex;
@@ -37,6 +37,7 @@ export const ContactTitle = styled.div`
   }
 
   @media (max-width: 768px) {
+    border-bottom: 1px dotted var(--main-color-navy);
     h3 {
       text-align: center;
       font-size: 20px;

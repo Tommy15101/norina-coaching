@@ -28,7 +28,9 @@ const Contact = () => {
     <ContactContainer id="contact">
       <ContactDisplay>
         <ContactTitle>
-          <h3>I would love to connect with you.</h3>
+          <h3>
+            I would love to <br /> connect with you.
+          </h3>
         </ContactTitle>
         <FormContainer>
           <Form
